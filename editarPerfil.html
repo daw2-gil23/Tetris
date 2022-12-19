@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <link rel="stylesheet" href="./assets/index.d29cb140.css">
+    <script type="module" src="./assets/index.43a74d76.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c71759f745.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+        <div class="container-fluid bg-dark text-white border-bottom">
+            <div class="pb-2">
+              <div class="col-12 d-flex justify-content-between">
+                <div>
+                  <img src="./img/UsuarioRegistrado.png" alt="usuarioAnonimo" class="imagen me-3 mt-2 mb-2 ms-1">
+                  <a href="./index.html"><i class="fa-solid fa-right-from-bracket  logOut"></i></a>
+                </div>
+                <button type="button" class="btn btn-primary me-3 mt-2 mb-2 nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="tetris.html">Jugar</a></li>
+                  <li><a class="dropdown-item" href="ranking.html">Ranking</a></li>
+                  <li><a class="dropdown-item" href="partidas.html">Historial Partidas</a></li>
+                </ul>    
+              </div>
+            </div>
+        </div>
+    </header>
+    <main>
+      <div class="row text-center">
+        <div class="col-10 offset-3 col-md-3 mt-5 offset-md-2 ">
+            <div class="d-flex align-items-end position-relative">
+              <img src="./img/UsuarioRegistrado.png" alt="imagen" class="imagenEdit bg-warning img-fluid">
+              <a href="#" class="position-absolute pb-3 pencilIcono fs-2"><i class="fa-solid fa-pencil"></i></a>
+            </div>
+        </div>
+        <div class="col-10 col-md-5 bg-warning mt-5 pt-5 d-flex justify-content-center pb-5 ms-5">
+            <form>
+                <div class="mb-3">
+                  <label for="InputNick" class="form-label pb-2 fs-5 text-left">Nick: </label>
+                  <br>
+                  <input type="text" name="inputname" value="Maria" disabled class="text-dark">
+                  <p class="pt-2">El nick no se puede modificar</p>
+                </div>
+                <div class="mb-3">
+                    <label for="InputFecha" class="form-label pb-2 fs-5 ">Fecha de nacimiento: </label>
+                    <br>
+                    <input type="date" class="form-control text-dark nacimiento" id="nacimiento">
+                </div>
+                <div class="mb-4">
+                  <label for="InputPassword" class="form-label pb-2 fs-5">Password:</label>
+                  <br>
+                  <input type="password" class="form-control text-dark" id="exampleInputPassword1">
+                </div>
+                <div class="m-2">
+                  <a href="#"><button class="btn btn-info h-100 border rounded border-info text-white text-center mt-2 pe-4 ps-4">Editar</button></a>
+                </div>
+              </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
